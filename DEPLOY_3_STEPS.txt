@@ -1,0 +1,73 @@
+# 🚀 HOSTING IN 3 STEPS
+
+## Copy & Paste These Commands
+
+### Step 1: Install
+```bash
+npm install -g vercel
+```
+
+### Step 2: Login
+```bash
+vercel login
+```
+(Follow the browser that opens, click "Authorize")
+
+### Step 3: Deploy
+```bash
+cd /workspaces/ThePartybox
+vercel
+```
+
+**DONE!** 🎉
+
+You'll get a URL like: `https://thepartybox-xyz.vercel.app`
+
+---
+
+## ✅ That's It!
+
+Your website is now LIVE on the internet.
+
+- ✅ People can visit it
+- ✅ Customers can submit quotes
+- ✅ You can see them in `/admin`
+- ✅ 100% FREE
+- ✅ No credit card needed
+
+---
+
+## 🎯 What Happens Next?
+
+1. **Website is live** at your new URL
+2. **Admin dashboard** at `/admin`
+3. **Quotes are saved** when customers submit
+4. **You can share** the URL with anyone
+
+---
+
+## ❓ That's It?
+
+**YES!** That's literally all you need to do.
+
+Your website is now:
+- Live on the internet
+- Taking customer quotes
+- Showing them in the admin dashboard
+- Completely free
+
+---
+
+## 🎉 Share Your URL
+
+Once you have your new URL, you can:
+- Share it with customers
+- Put it on business cards
+- Send to family/friends
+- Advertise online
+
+**You're ready to get quotes!**
+
+---
+
+Questions? See **HOST_NOW.md** for more details.
