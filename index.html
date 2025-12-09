@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PartyBox | Custom Balloons & Party Decor in Hornchurch</title>
+    <meta name="description" content="The PartyBox: Your Hornchurch destination for bespoke balloon artistry. Custom balloon designs for birthdays, weddings, and corporate events. Call 01708 898374.">
+    <meta name="keywords" content="balloon shop Hornchurch, custom balloon designs Essex, party decorations, balloon arches, balloon bouquets">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1 class="logo-text">The PartyBox</h1>
+                    <p class="logo-tagline">Where Every Celebration Takes Flight!</p>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="tel:01708898374" class="btn-call">
+                        <i class="fas fa-phone"></i>
+                        01708 898374
+                    </a>
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="hero-title">Where Every Celebration Takes Flight!</h2>
+                <p class="hero-subtitle">The PartyBox: Your Hornchurch Destination for Bespoke Balloon Artistry</p>
+                <p class="hero-description">We don't just sell balloons—we craft unforgettable moments with custom, high-quality designs for all events.</p>
+                <div class="hero-buttons">
+                    <a href="#gallery" class="btn btn-primary">View Our Gallery</a>
+                    <a href="#contact" class="btn btn-secondary">Request a Custom Quote</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <img 
+                        src=""
+                        alt="Stunning balloon display for celebrations"
+                        class="hero-image"
+                        loading="eager"
+                    />
+                    <div class="hero-image-overlay">
+                        <i class="fas fa-birthday-cake"></i>
+                        <p>Stunning Balloon Displays</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Custom Designs</h3>
+                    <p>Bespoke balloon artistry tailored to your event</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick delivery throughout Hornchurch and Essex</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>High-quality materials for lasting impressions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section id="gallery" class="gallery-preview">
+        <div class="container">
+            <h2 class="section-title">Our Amazing Work</h2>
+            <p class="section-subtitle">Browse through our stunning balloon creations</p>
+            
+            <!-- Category Filter -->
+            <div class="gallery-filters">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="birthdays">Birthdays</button>
+                <button class="category-btn" data-category="weddings">Weddings</button>
+                <button class="category-btn" data-category="corporate">Corporate</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be dynamically loaded from JSON -->
+                <div class="gallery-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading amazing balloon creations...</p>
+                </div>
+            </div>
+            
+            <div class="gallery-cta">
+                <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-carousel" id="testimonial-carousel">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Absolutely fantastic service! The balloon arch for my daughter's birthday was stunning. Professional, creative, and reliable!"</p>
+                            <cite>- Sarah Johnson, Hornchurch</cite>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The corporate event balloons were perfect! Great attention to detail and excellent customer service. Highly recommend!"</p>
+                            <cite>- Michael Chen, Romford</cite>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Beautiful wedding balloon decorations! They made our special day even more magical. Thank you PartyBox!"</p>
+                            <cite>- Emma & David, Upminster</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" id="next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Balloon Bouquets</h3>
+                    <p>Beautiful balloon arrangements perfect for any celebration</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-archway"></i>
+                    </div>
+                    <h3>Balloon Arches</h3>
+                    <p>Stunning entrance arches and photo backdrops</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-columns"></i>
+                    </div>
+                    <h3>Balloon Columns</h3>
+                    <p>Elegant columns for weddings and corporate events</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3>Delivery Service</h3>
+                    <p>Fast and reliable delivery throughout Essex</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>9 Station Parade<br>Hornchurch RM12 5AB</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p><a href="tel:01708898374" class="click-to-call">01708 898374</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Business Hours</h3>
+                            <p>Open · Closes 6 pm</p>
+                            <small>Mon-Sat: 9am-6pm</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="quote-form" class="quote-form">
+                        <h3>Request a Custom Quote</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="event-date" name="event-date" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="event-type" name="event-type" required>
+                                <option value="">Select Event Type</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="corporate">Corporate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="details" name="details" placeholder="Tell us about your event and what you're looking for..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Quote Request</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.123456789!2d0.1833!3d51.5564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMzJzIzLjQiTiAwwrAxMCc1OS45IkU!5e0!3m2!1sen!2suk!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The PartyBox</h3>
+                    <p>Your Hornchurch destination for bespoke balloon artistry. We craft unforgettable moments with custom, high-quality designs for all events.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 9 Station Parade, Hornchurch RM12 5AB</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:01708898374" class="click-to-call">01708 898374</a></p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 9am-6pm</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The PartyBox. All rights reserved. | Designed for unforgettable celebrations</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

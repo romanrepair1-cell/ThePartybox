@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The PartyBox | Custom Balloons & Party Decor in Hornchurch</title>
+    <meta name="description" content="Browse our stunning balloon gallery featuring birthday, wedding, and corporate event decorations. The PartyBox Hornchurch - Call 01708 898374.">
+    <meta name="keywords" content="balloon gallery Hornchurch, birthday balloons Essex, wedding balloons, corporate balloon displays">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-header {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, rgba(0, 191, 255, 0.1), rgba(255, 20, 147, 0.1));
+            text-align: center;
+        }
+        
+        .gallery-title {
+            font-size: 3rem;
+            font-family: 'Fredoka One', cursive;
+            color: var(--electric-blue);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .gallery-description {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .full-gallery {
+            padding: var(--spacing-xxl) 0;
+        }
+        
+        .full-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .gallery-item-large {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            box-shadow: var(--shadow-md);
+            aspect-ratio: 16/12;
+        }
+        
+        .gallery-item-large:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .gallery-image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--hot-pink), var(--gold));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding: var(--spacing-lg);
+            position: relative;
+        }
+        
+        .gallery-image-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-image-placeholder i {
+            font-size: 4rem;
+            margin-bottom: var(--spacing-md);
+            z-index: 1;
+        }
+        
+        .gallery-image-placeholder h4 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--white);
+            z-index: 1;
+        }
+        
+        .gallery-image-placeholder p {
+            color: var(--white);
+            font-size: 1rem;
+            z-index: 1;
+            line-height: 1.4;
+        }
+        
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: var(--spacing-xs) var(--spacing-md);
+            border: 2px solid var(--electric-blue);
+            background: transparent;
+            color: var(--electric-blue);
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--electric-blue);
+            color: var(--white);
+        }
+        
+        .gallery-cta {
+            text-align: center;
+            margin-top: var(--spacing-xl);
+        }
+        
+        .btn-back {
+            background: var(--gold);
+            color: var(--black);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            transition: var(--transition-fast);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .btn-back:hover {
+            background: #FFC107;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-title {
+                font-size: 2.5rem;
+            }
+            
+            .full-gallery-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .gallery-filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1 class="logo-text">The PartyBox</h1>
+                    <p class="logo-tagline">Where Every Celebration Takes Flight!</p>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="index.html#services" class="nav-link">Services</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="tel:01708898374" class="btn-call click-to-call">
+                        <i class="fas fa-phone"></i>
+                        01708 898374
+                    </a>
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <h2 class="gallery-title">Our Balloon Gallery</h2>
+            <p class="gallery-description">
+                Explore our stunning collection of balloon creations for birthdays, weddings, and corporate events. 
+                Each design is crafted with care and creativity to make your celebration unforgettable.
+            </p>
+        </div>
+    </section>
+
+    <!-- Full Gallery -->
+    <section class="full-gallery">
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="gallery-filters">
+                <button class="category-btn active" data-category="all">All Creations</button>
+                <button class="category-btn" data-category="birthdays">Birthdays</button>
+                <button class="category-btn" data-category="weddings">Weddings</button>
+                <button class="category-btn" data-category="corporate">Corporate</button>
+            </div>
+
+            <!-- Full Gallery Grid -->
+            <div class="full-gallery-grid" id="gallery-container">
+                <!-- Gallery items will be dynamically loaded from JSON -->
+                <div class="gallery-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading amazing balloon creations...</p>
+                </div>
+            </div>
+            
+            <div class="gallery-cta">
+                <a href="index.html#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Request a Custom Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The PartyBox</h3>
+                    <p>Your Hornchurch destination for bespoke balloon artistry. We craft unforgettable moments with custom, high-quality designs for all events.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 9 Station Parade, Hornchurch RM12 5AB</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:01708898374" class="click-to-call">01708 898374</a></p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 9am-6pm</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The PartyBox. All rights reserved. | Designed for unforgettable celebrations</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
